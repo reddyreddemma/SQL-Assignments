@@ -1,0 +1,19 @@
+CREATE TABLE Employee (
+    ID INT,
+    Name VARCHAR(30),
+    Email VARCHAR(150),
+    Department VARCHAR(50),
+    Date_of_Birth DATE,
+    Salary DECIMAL(20,2),
+    Is_Active BOOLEAN
+);
+
+INSERT INTO Employee VALUES 
+(1,'REDDEMMA','reddemma07@gmail.com','CSE','2005-02-01',90000.00,TRUE),
+(2,'KRISHNA','krishna9@gmail.com','CSM','2000-50-10',150000.00,TRUE);
+
+-- Retrieve all columns from the Employee table
+SELECT * FROM Employee;
+
+-- Retrieve only the ID and Name columns where Salary is greater than 10000
+SELECT ID, Name FROM Employee WHERE Salary > 10000;
