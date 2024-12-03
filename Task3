@@ -1,0 +1,23 @@
+CREATE TABLE Employee(
+    ID INT,
+    Name VARCHAR(30),
+    Email VARCHAR(150),
+    Department VARCHAR(50),
+    Date_of_Birth DATE,
+    Salary DECIMAL(20,2),
+    Is_Active BOOLEAN
+);
+
+INSERT INTO Employee (ID, Name, Email, Department, Date_of_Birth, Salary, Is_Active) 
+VALUES 
+(1, 'REDDEMMA', 'reddemma07@gmail.com', 'CSE', '2005-02-01', 90000.00, TRUE),
+(2, 'KRISHNA', 'krishna9@gmail.com', 'CSM', '2000-10-10', 150000.00, TRUE);
+
+UPDATE Employee 
+SET Salary = 75000 
+WHERE ID = 2;
+
+DELETE FROM Employee 
+WHERE ID = 1;
+
+SELECT * FROM Employee;
